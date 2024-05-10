@@ -6,23 +6,27 @@ import gymImg from "@/public/gym.png";
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "./#home",
   },
   {
     name: "About",
-    hash: "#about",
+    hash: "./#about",
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "./#projects",
   },
   {
     name: "Skills",
-    hash: "#skills",
+    hash: "./#skills",
   },
   {
     name: "Contact",
-    hash: "#contact",
+    hash: "./#contact",
+  },
+  {
+    name: "Articles",
+    hash: "./articles",
   },
 ] as const;
 
@@ -30,9 +34,10 @@ export const projectsData = [
   {
     title: "E-commerce MMRD",
     description:
-      "I worked on this project which is Modren Minimalist and Responsive design applying all what I learn.",
+      "I worked on this project which is Modern Minimalist and Responsive design applying all what I learn.",
     tags: ["React", "Next.js", "Tailwind" , "TypeScript"],
     imageUrl: ecomImg,
+    link: "https://iayvobecomercewebsiteproject.vercel.app/",
   },
   {
     title: "Car Rental Agency",
@@ -40,6 +45,7 @@ export const projectsData = [
       "For making different project I try to make a Responsive high and fully animated and smoothly navigated website for car rental agency.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     imageUrl: carRentImg,
+    link: "https://carrentalagencysite.vercel.app/",
   },
   {
     title: "Gym Site",
@@ -47,6 +53,7 @@ export const projectsData = [
       "A public web app for quick showcase for each of a serbian gym salle",
     tags: ["React", "Next.js" , "Tailwind", "TypeScript"],
     imageUrl: gymImg,
+    link: "https://gymatemain.vercel.app",
   },
   {
     title: "Crypto Wallet",
@@ -54,6 +61,7 @@ export const projectsData = [
       "Crypto live update pricing and all features all so it is Responsive and high animated site",
     tags: ["React", "Next.js" , "Tailwind", "TypeScript" , "API"],
     imageUrl: cryptoImg,
+    link: "https://cryptositeproject.vercel.app/",
   },
 ] as const;
 

@@ -7,7 +7,7 @@ const nextConfig = {
           hostname: "media.licdn.com",
         },
       ],
-    },
+    }
 };
 
 
