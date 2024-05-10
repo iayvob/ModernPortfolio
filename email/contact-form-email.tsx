@@ -3,7 +3,6 @@ import {
   Html,
   Body,
   Head,
-  Heading,
   Hr,
   Container,
   Preview,
@@ -29,9 +28,9 @@ export default function ContactFormEmail({
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
-              <Heading as="h5">
+              <Text className="text-2xl">
                 You received the following message from the contact form
-              </Heading>
+              </Text>
               <Text>{message}</Text>
               <Hr />
               <Text>The sender's email is: {senderEmail}</Text>
