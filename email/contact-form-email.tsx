@@ -29,7 +29,7 @@ export default function ContactFormEmail({
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
-              <Heading as="h2">
+              <Heading as="h5">
                 You received the following message from the contact form
               </Heading>
               <Text>{message}</Text>
