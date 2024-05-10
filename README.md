@@ -26,31 +26,49 @@
 
 </div>
 
+<br>
+<h3 align='center'>Articles Page 👇</h3>
+
+<div align='center'>
+<img src='./public/Pics/Article.png'/>
+
+</div>
+
+<br>
+<h3 align='center'>All Articles 👇</h3>
+
+<div align='center'>
+<img src='./public/Pics/AllArticles.png'/>
+
+</div>
+
+
+
 <br><br>
 <h3 align='center'>About Page 👇</h3>
 
 <div align='center'>
-<img src='./public/Pics/about.png'/>
+<img src='./public/Pics/About.png'/>
 </div>
 <br>
 <br>
 <h3 align='center'>Projects Page 👇</h3>
 
 <div align='center'>
-<img src='./public/Pics/project.png'/>
+<img src='./public/Pics/Projects.png'/>
 </div>
 <br>
 <br>
 <h3 align='center'>Skills Page 👇</h3>
 
 <div align='center'>
-<img src='./public/Pics/skills.png'/>
+<img src='./public/Pics/Skills.png'/>
 </div>
 <br>
 <br>
 <h3 align='center'>Contact Page 👇</h3>
 
 <div align='center'>
-<img src='./public/Pics/contact.png'/>
+<img src='./public/Pics/Contact.png'/>
 </div>
 <br>
