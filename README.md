@@ -5,7 +5,7 @@
 <p><b>Portfolio</b> High pretty sophisticated Porfolio support both light and dark mod it also high animated using Framer motion, also we work on the services from the server side to the client side and also i try to make relation between the server and the owner using Resend platform and for the styling of email i use React Email and for creation of the message and alerts i use React Toaster and now for the styling i use Clsx library for the condition styling and finally upload it to vercel.</p>
 
 
-👉 Live Demo: <a href='https://porfolio-iayvob.vercel.app/'>Portfolio of me >> Demo</a>
+👉 Live Demo: <a href='https://portfolio-iayvob.vercel.app/'>Portfolio of me >> Demo</a>
 
 <h3>Build with:</h3>
 
