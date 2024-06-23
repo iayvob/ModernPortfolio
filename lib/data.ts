@@ -2,6 +2,7 @@ import cryptoImg from "@/public/crypto.png";
 import carRentImg from "@/public/carRent.png";
 import ecomImg from "@/public/ecom.png";
 import gymImg from "@/public/gym.png";
+import quizImg from "@/public/quizzApp.png"
 
 export const links = [
   {
@@ -31,6 +32,14 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Learnrithm",
+    description:
+      "Responsive and dynamic Saas Application for Pear softwares using the latest techStack",
+    tags: ["Pisma", "Next.js" , "Tailwind", "TypeScript" , "API"],
+    imageUrl: quizImg,
+    link: "https://quizzorithm-testapp.vercel.app/",
+  },
   {
     title: "E-commerce MMRD",
     description:
