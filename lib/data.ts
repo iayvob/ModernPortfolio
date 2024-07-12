@@ -3,6 +3,7 @@ import carRentImg from "@/public/carRent.png";
 import ecomImg from "@/public/ecom.png";
 import gymImg from "@/public/gym.png";
 import quizImg from "@/public/quizzApp.png"
+import aiTeacherImg from "@/public/aiTeacher.jpeg"
 
 export const links = [
   {
@@ -32,6 +33,14 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "AI Teacher",
+    description:
+      "Responsive and dynamic Saas Application for Pear softwares using the latest techStack",
+    tags: ["Mongoose", "ReactJS" , "Tailwind", "JavaScript" , "ExpressJS"],
+    imageUrl: aiTeacherImg,
+    link: "https://ai-teacher-psi.vercel.app/",
+  },
   {
     title: "Learnrithm",
     description:
@@ -75,12 +84,13 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
   "TypeScript",
-  "React",
-  "Next.js",
+  "ReactJS",
+  "NextJS",
+  "ExpressJS",
+  "NodeJS",
+  "MongoDB",
+  "SqlDB",
   "Tailwind",
   "Sass&Scss",
   "Figma",
