@@ -1,7 +1,7 @@
 export const article = [
     {
-      title: "Consectetur anim mollit et voluptate nisi consequat nostrud duis minim veniam aliquip consequat.",
-      description: "Voluptate tempor mollit ex reprehenderit Lorem laboris nostrud Lorem laboris mollit ullamco quis labore nostrud. Occaecat et velit sunt sit consequat Lorem magna quis Lorem sint officia labore velit. Incididunt elit proident quis esse veniam eiusmod proident proident dolor velit ut exercitation nulla ut.",
+      title: "Using AI to make best Application: AI Teacher & Course Generation",
+      description: "Taking the ai and Saas Application to the next level when we create this amazing app, wich is about generation of Course using the AI, and also there is a teacher there to assit you if you need any help when learning or applying what you learned, he can also give you more examples, this is very responsive app and dynamic with animation and low fees to get pro version, all the rights returns to Pear softwares company where i working for",
       tags: ["",],
       introParagraph: "",
       st1Paragraph: "",
@@ -11,11 +11,11 @@ export const article = [
       references: "",
       bibliographie: "",
       imageUrl: [],
-      link:"#",
+      link:"https://ai-teacher-psi.vercel.app/",
     },
     {
-      title: "Ipsum reprehenderit et consectetur amet.",
-      description: "Nulla aliqua eiusmod dolor occaecat reprehenderit eiusmod cillum elit magna culpa. Tempor cillum deserunt excepteur aliquip elit ad proident deserunt officia sint consectetur reprehenderit nisi enim. Laborum labore in ipsum in eiusmod Lorem minim reprehenderit aliqua. Excepteur laborum duis ullamco velit labore eu occaecat aliqua.",
+      title: "Using AI to make best Application: AI quizz",
+      description: "In this application you choose the topic and the number of questions, and the type if open ended or mcq to generate questions and their answer then you gone take quiz on that you can test your knowledge in diffrent side of science and you can specify in topic what kind of type and levels you want to generate about, Animated, sofisticated also lovable app, all the rights returns to Pear softwares company where i working for",
       tags: ["",],
       introParagraph: "",
       st1Paragraph: "",
@@ -25,6 +25,6 @@ export const article = [
       references: "",
       bibliographie: "",
       imageUrl: [],
-      link:"#",
+      link:"https://quizzorithm-testapp.vercel.app/",
     },
 ] as const;
