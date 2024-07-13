@@ -4,11 +4,13 @@ import React from "react";
 import SectionHeading from "@/components/section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "@/components/project";
+import { useSectionInView } from "@/lib/hooks";
 
 
 export default function Projects() {
+    const { ref } = useSectionInView("projectsPage", 0.25);
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col" ref={ref} id='projectsPage'>
             <SectionHeading>
                 <p>All My Projects</p>
             </SectionHeading>

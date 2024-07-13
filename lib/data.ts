@@ -29,6 +29,34 @@ export const links = [
 
 ] as const;
 
+export const linksType = [
+  {
+    name: "Home",
+    hash: "./#home",
+  },
+  {
+    name: "About",
+    hash: "./#about",
+  },
+  {
+    name: "Projects",
+    hash: "./#projects",
+  },
+  {
+    name: "Skills",
+    hash: "./#skills",
+  },
+  {
+    name: "Contact",
+    hash: "./#contact",
+  },
+  {
+    name: "projectsPage",
+    hash: "./projects",
+  },
+
+] as const;
+
 export const projectsData = [
   {
     title: "AI Teacher",
