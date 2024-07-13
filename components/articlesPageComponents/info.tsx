@@ -15,7 +15,7 @@ export default function Intro() {
     const { ref } = useSectionInView("Articles", 0.5);
     
     return (
-        <section ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="articles">
+        <section ref={ref} className="mb-8 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] md:-mb-16" id="articles">
             <div className="flex items-center justify-center">
                 <div className=" relative ">
                     <motion.div
@@ -26,7 +26,7 @@ export default function Intro() {
                             duration: 0.2,
                         }}
                     >
-                        <Image src="https://media.licdn.com/dms/image/D4D03AQF9k5yh2BRRZg/profile-displayphoto-shrink_800_800/0/1712205955477?e=1719446400&v=beta&t=8Y3mSvYjopkk2LDFVlfcsSuYu-jyRKE0xqNblpn2ivM" alt="Chalabi Ayoub" width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
+                        <Image src="https://pbs.twimg.com/profile_images/1804488911093202944/UerGXacu_400x400.jpg" alt="Chalabi Ayoub" width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
                     </motion.div>
                     <motion.span className="absolute bottom-0 right-0 text-4xl"
                         initial={{ opacity: 0, scale: 0 }}
@@ -53,7 +53,7 @@ export default function Intro() {
                 <span className="underline">if find kind interactions with it.</span>
             </motion.p>
 
-            <motion.div className="flex flex-col sm:flex-row items-center gap-2 px-4 text-lg font-medium justify-center"
+            <motion.div className="flex flex-row items-center gap-2 px-4 text-lg font-medium justify-center"
                 initial={{ opacity: 0, y: 100}}
                 animate={{ opacity: 1, y: 0}}
                 transition={{

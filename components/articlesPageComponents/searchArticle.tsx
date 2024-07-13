@@ -1,19 +1,20 @@
 "use client";
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { article } from '@/lib/articles'; 
 import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 import CopyLink from './copyLink';
 import SectionHeading from '../section-heading';
+import { useRouter } from 'next/navigation';
 
 const SearchArticle: React.FC = () => {
+  const router = useRouter();
   const { ref } = useSectionInView("Articles",);
 
   
   const [searchText, setSearchText] = useState<string>('');
-  const [searchResult, setSearchResult] = useState<{ title: string; description: string; link:string } | null>(null);
+  const [searchResult, setSearchResult] = useState<{ id: number; title: string; description: string; link:string } | null>(null);
   const [searchPerformed, setSearchPerformed] = useState<boolean>(false);
 
   const handleSearch = (event: React.FormEvent<HTMLFormElement>): void => {
@@ -27,6 +28,7 @@ const SearchArticle: React.FC = () => {
 
     if (matchingArticle) {
       setSearchResult({
+        id: matchingArticle.id,
         title: matchingArticle.title,
         description: matchingArticle.description,
         link: matchingArticle.link
@@ -39,10 +41,10 @@ const SearchArticle: React.FC = () => {
   };
 
   return (
-    <section ref={ref} className='w-[60%] flex flex-col -mb-36' id='articleTitles'>
+    <section ref={ref} className='w-[min(100%,38rem)] flex flex-col mb-8 md:-mb-36 md:-mt-16' id='articleTitles'>
       <SectionHeading>Articles</SectionHeading>
       <div className='flex flex-col'>
-        <form className="w-full mx-auto" onSubmit={handleSearch}>
+        <form className="w-full md:w-[60%] mx-auto" onSubmit={handleSearch}>
           <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -66,7 +68,7 @@ const SearchArticle: React.FC = () => {
         {searchPerformed ? (
           searchResult !== null ? (
             <div className='mb-44'>
-              <p className='mb-2 font-medium'>May be you search about :</p>
+              <p className='text-2xl font-medium mb-2'>May be you search about :</p>
               <div className='flex flex-col p-3 border dark:border-slate-800 hover:dark:border-white border-gray-200 hover:border-black duration-300 rounded-2xl'>
                 <div className="italic font-bold mb-3 text-lg rounded-full hover:bg-gray-200 hover:text-black text-gray-700 dark:hover:bg-gray-800 dark:hover:text-white hover:underline p-2 dark:text-gray-300 duration-300">
                   👉 {searchResult.title}
@@ -77,7 +79,7 @@ const SearchArticle: React.FC = () => {
                   </p>
                 </div>
                 <div className='flex flex-row-reverse gap-3 items-center mt-3'>
-                  <Link href='/' className="w-24 h-12 bg-gray-900 dark:bg-gray-700 dark:hover:bg-black text-white px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 duration-200 cursor-pointer">Open</Link>
+                  <button className="w-24 h-12 bg-gray-900 dark:bg-gray-700 dark:hover:bg-black text-white px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 duration-200 cursor-pointer" onClick={() => router.push(`/articles/article/${searchResult.id}`)} >Open</button>
                   <CopyLink link={searchResult.link} />
                 </div>
               </div>

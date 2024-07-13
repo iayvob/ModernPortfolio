@@ -26,10 +26,7 @@ export const links = [
     name: "Contact",
     hash: "./#contact",
   },
-  {
-    name: "Articles",
-    hash: "./articles",
-  },
+
 ] as const;
 
 export const projectsData = [
@@ -68,7 +65,7 @@ export const projectsData = [
   {
     title: "Gym Site",
     description:
-      "A public web app for quick showcase for each of a serbian gym salle",
+      "A public web app for quick showcase Gym, here you can see all programs, also you can presize your Objectif to gain, Responsive, Dynamic and Animated application",
     tags: ["React", "Next.js" , "Tailwind", "TypeScript"],
     imageUrl: gymImg,
     link: "https://gymatemain.vercel.app",
@@ -95,3 +92,5 @@ export const skillsData = [
   "Sass&Scss",
   "Figma",
 ] as const;
+
+export const Url = 'https://iayvob.vercel.app/projects'

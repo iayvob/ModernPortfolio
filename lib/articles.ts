@@ -1,5 +1,6 @@
 export const article = [
   {
+    id : 0,
     title: "Using AI to make best Application: AI Teacher & Course Generation.",
     description: "Taking the ai and Saas Application to the next level when we create this amazing app, wich is about generation of Course using the AI, and also there is a teacher there to assit you if you need any help when learning or applying what you learned, he can also give you more examples, this is very responsive app and dynamic with animation and low fees to get pro version, all the rights returns to Pear softwares company where i work for.",
     tags: ["AI", "SaaS", "Course Generation", "Virtual Teacher", "MERN Stack", "Tailwind CSS", "MongoDB", "Flutterwave", "Paystack", "JavaScript"],
@@ -14,6 +15,7 @@ export const article = [
     link:"https://ai-teacher-psi.vercel.app/",
   },
   {
+    id: 1,
     title: "Using AI to make best Application: AI quizz",
     description: "In this application you choose the topic and the number of questions, and the type if open ended or mcq to generate questions and their answer then you gone take quiz on that you can test your knowledge in diffrent side of science and you can specify in topic what kind of type and levels you want to generate about, Animated, sofisticated also lovable app, all the rights returns to Pear softwares company where i work for.",
     tags: ["AI", "Quiz Generation", "Knowledge Testing", "Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Email Integration"],

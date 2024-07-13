@@ -28,7 +28,7 @@ export default function Intro() {
                             duration: 0.2,
                         }}
                     >
-                        <Image src="@/public/profilePic.png" alt="Chalabi Ayoub" width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
+                        <Image src="https://pbs.twimg.com/profile_images/1804488911093202944/UerGXacu_400x400.jpg" alt="Chalabi Ayoub" width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl" />
                     </motion.div>
                     <motion.span className="absolute bottom-0 right-0 text-4xl"
                         initial={{ opacity: 0, scale: 0 }}
@@ -51,8 +51,8 @@ export default function Intro() {
             >
                 <span className="font-bold">Hello, I'm Ayoub.</span> I'm a {" "}
                 <span className="font-bold">full-stack developer</span> with {" "}
-                <span className="font-bold">2 years</span> of experiences. I enjoy building <span className="italic">sites</span>. My focus is {" "}
-                <span className="underline">React (Next.js)</span>.
+                <span className="font-bold">2 years</span> of experiences. I enjoy building <span className="italic">sites</span> with {" "}
+                <span className="underline">different (TechStacks)</span>.
             </motion.p>
 
             <motion.div className="flex flex-col sm:flex-row items-center gap-2 px-4 text-lg font-medium justify-center"
@@ -64,12 +64,12 @@ export default function Intro() {
             >
                 <Link onClick={() => {setActiveSection("Contact"); setTimeOfLastClick(Date.now());}} href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/></Link>
                 <a href="/CV.pdf" download className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10">Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/></a>
-                <a href="https://www.linkedin.com/in/iayvob" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80">
+                <div className="!flex gap-5"><a href="https://www.linkedin.com/in/iayvob" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80">
                     <BsLinkedin />
                 </a>
                 <a href="https://github.com/iayvob" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-[1.15] hover:text-gray-950 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80">
                     <FaGithubSquare />
-                </a>
+                </a></div>
             </motion.div>
         </section>
     )
