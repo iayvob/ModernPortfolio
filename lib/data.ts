@@ -118,7 +118,7 @@ export const skillsData = [
   "SqlDB",
   "Tailwind",
   "Sass&Scss",
-  "Figma",
+  "Bootstrap",
 ] as const;
 
 export const Url = 'https://iayvob.vercel.app/projects'
