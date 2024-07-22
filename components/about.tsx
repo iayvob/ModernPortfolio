@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { FiExternalLink } from "react-icons/fi";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -44,6 +45,12 @@ export default function About() {
         <span className="font-medium">designing with Figma and also about Electronics</span>. I'm also
         learning how to create contents.
       </p>
+      <div className="flex items-center justify-center mt-12">
+        <div className="relative">
+          <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur"></div>
+          <button className="relative rounded-lg bg-gray-950 px-4 py-2 text-white"><a href="https://iayvoblog.vercel.app" className="flex items-center gap-3">iayvoblog <FiExternalLink /></a></button>
+        </div>
+      </div>
     </motion.section>
   );
 }
