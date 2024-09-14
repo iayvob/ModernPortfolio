@@ -26,6 +26,14 @@ export const links = [
     name: "Contact",
     hash: "./#contact",
   },
+    {
+    name: "Contact",
+    hash: "./#contact",
+  },
+  {
+    name: "Services",
+    hash: "./services",
+  },
 
 ] as const;
 
@@ -53,6 +61,10 @@ export const linksType = [
   {
     name: "projectsPage",
     hash: "./projects",
+  },
+  {
+    name: "Services",
+    hash: "./services",
   },
 
 ] as const;

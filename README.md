@@ -26,22 +26,6 @@
 
 </div>
 
-<br>
-<h3 align='center'>Articles Page 👇</h3>
-
-<div align='center'>
-<img src='./public/Pics/Article.png'/>
-
-</div>
-
-<br>
-<h3 align='center'>All Articles 👇</h3>
-
-<div align='center'>
-<img src='./public/Pics/AllArticles.png'/>
-
-</div>
-
 
 
 <br><br>
