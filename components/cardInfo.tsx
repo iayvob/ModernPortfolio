@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useRef } from "react";
-import { projectsData } from "@/lib/data";
+import { projectsData, services } from "@/lib/data";
 import { useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-type ProjectProps = (typeof projectsData)[number];
+type Props = (typeof projectsData | typeof services )[number];
 
-export default function Project({ title, description, tags, imageUrl, link }: ProjectProps) {
+export default function CardInfo({ title, description, tags, imageUrl, link }: Props) {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,

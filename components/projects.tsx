@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
-import Project from "./project";
+import Project from "./cardInfo";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 

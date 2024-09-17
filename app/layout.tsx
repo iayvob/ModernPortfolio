@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
@@ -7,13 +6,9 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import Script from "next/script";
+import HeaderExternal from "@/components/headerExternal";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Portfolio | Ayoub Chalabi",
-  description: "Ayoub Front-end React(Next.js) Developer",
-};
 
 export default function RootLayout({
   children,
@@ -43,7 +38,14 @@ export default function RootLayout({
         />
 
         <ActiveSectionContextProvider>
-          <Header />
+          <div className="w-full flex gap-x-2">
+            <div>
+              <Header />
+            </div>
+            <div>
+              <HeaderExternal />
+            </div>
+          </div>
           {children}
           <Toaster position="top-right" />
           <Footer />

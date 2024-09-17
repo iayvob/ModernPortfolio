@@ -2,32 +2,26 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { Addlinks } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { FiExternalLink } from "react-icons/fi";
 
-export default function Header() {
+export default function HeaderExternal() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
       <motion.div
-        className={clsx(
-          "fixed top-6 left-1/2 -translate-x-1/2 h-[3.25rem] rounded-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-[23rem] items-center dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75",
-          {
-            "!w-[5rem]":
-              activeSection === "projectsPage" || activeSection === "Services",
-          }
-        )}
+        className="fixed top-20 left-1/2 -translate-x-1/2 h-[3.25rem] rounded-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-[16rem] items-center dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
-      <nav className="flex fixed left-1/2 -translate-x-1/2 py-0 top-[1.7rem] h-[initial]">
+      <nav className="flex fixed top-[5.2rem] left-1/2 -translate-x-1/2 py-0 h-[initial]">
         <ul className="flex items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 w-[initial] flex-nowrap">
-          {links.map((link) => (
+          {Addlinks.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
               key={link.hash}
@@ -40,16 +34,6 @@ export default function Header() {
                   {
                     "text-gray-950 dark:text-gray-200":
                       activeSection === link.name,
-                  },
-                  {
-                    hidden:
-                      (activeSection === "projectsPage" ||
-                        activeSection === "Services") &&
-                      link.name !== "Home",
-                  },
-                  {
-                    hidden:
-                      link.name === "Services" || link.name === "projectsPage",
                   }
                 )}
                 href={link.hash}
@@ -57,7 +41,7 @@ export default function Header() {
                   setActiveSection(link.name), setTimeOfLastClick(Date.now());
                 }}
               >
-                {link.name}
+                {link.name} <FiExternalLink />
                 {link.name === activeSection && (
                   <motion.span
                     className="bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
