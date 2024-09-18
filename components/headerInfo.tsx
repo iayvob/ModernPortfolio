@@ -13,7 +13,7 @@ type Props = {
 
 export default function HeaderInfo({ title, description, page }: Props) {
   return (
-    <div className="mb-28 px-20 mt-12 sm:mb-0 scroll-mt-[100rem] flex flex-col gap-y-6 xl:flex-row justify-between">
+    <div className="mb-28 px-20 mt-12 sm:mb-0 flex flex-col gap-y-6 xl:flex-row justify-between">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -21,9 +21,9 @@ export default function HeaderInfo({ title, description, page }: Props) {
           type: "tween",
           duration: 0.2,
         }}
-        className="lg:w-[60%] flex flex-col xl:flex-row gap-y-4"
+        className="lg:w-[60%] flex flex-col gap-y-4"
       >
-        <div className="flex flex-col gap-x-2 items-center gap-y-6 ">
+        <div className="flex flex-col xl:flex-row gap-x-2 items-center gap-y-6 ">
           <div className="flex items-center justify-center">
             <div className=" relative ">
               <div>
@@ -56,7 +56,9 @@ export default function HeaderInfo({ title, description, page }: Props) {
             <h2 className="text-3xl font-bold">{title}</h2>
           </div>
         </div>
-        <p className="font-semibold">{description}</p>
+        <div>
+          <p className="font-semibold">{description}</p>
+        </div>
       </motion.div>
 
       <motion.div
@@ -68,7 +70,9 @@ export default function HeaderInfo({ title, description, page }: Props) {
         }}
       >
         <Image
-          src={page === "services" ? service : page === "projects" ? project : ""}
+          src={
+            page === "services" ? service : page === "projects" ? project : ""
+          }
           alt="show case"
           width={300}
           height={300}

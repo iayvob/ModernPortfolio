@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const { ref } = useSectionInView("projectsPage", 0.25);
 
   return (
-    <div className="flex flex-col" ref={ref} id="projectsPage">
+    <div className="flex flex-col scroll-mt-[100rem] " ref={ref} id="projectsPage">
       <HeaderInfo
         title={"Showcasing Innovative Web Solutions"}
         description={
