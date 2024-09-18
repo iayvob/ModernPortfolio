@@ -22,7 +22,7 @@ export default function Intro() {
       id="home"
     >
       <div className="flex items-center justify-center">
-        <div className=" relative ">  
+        <div className=" relative ">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -89,11 +89,11 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/CV.pdf"
+          href="/files/CV.pdf"
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
         >
-          Download CV{" "}
+          Download Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <div className="!flex gap-5">
@@ -111,17 +111,24 @@ export default function Intro() {
           </a>
         </div>
       </motion.div>
-      <div className="flex items-center justify-center mt-12 gap-16">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+        className="flex items-center justify-center mt-12 gap-16"
+      >
         <div className="relative">
-          <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur"></div>
-          <button className="relative rounded-lg bg-gray-950 px-4 py-2 text-white">
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur"></div>
+          <button className="relative rounded-full bg-gray-950 px-4 py-2 text-white">
             <Link href="/services" className="flex items-center gap-3">
               Services Offered
               <FiExternalLink />
             </Link>
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
