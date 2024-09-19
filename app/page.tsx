@@ -1,10 +1,10 @@
-import About from "@/components/about";
+import SectionDivider from "@/components/comune/section-divider";
+import About from "@/components/home/about";
+import Intro from "@/components/home/intro";
+import Skills from "@/components/home/skills";
 import type { Metadata } from "next";
-import Contact from "@/components/contact";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
+import Contact from "@/components/home/contact";
+import Projects from "@/components/home/projects";
 
 export const metadata: Metadata = {
   title: "Portfolio | Ayoub Chalabi",

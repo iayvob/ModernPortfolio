@@ -1,14 +1,15 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import service from "@/public/services/3.png";
-import project from "@/public/services/9.png";
+import test from "@/public/Illustration/testimonials.png";
+import project from "@/public/Illustration/project.png";
+import service from "@/public/Illustration/service.png";
 import { motion } from "framer-motion";
 
 type Props = {
   title: string;
   description: string;
-  page: "projects" | "services";
+  page: "projects" | "services" | "testimonials";
 };
 
 export default function HeaderInfo({ title, description, page }: Props) {
@@ -71,7 +72,13 @@ export default function HeaderInfo({ title, description, page }: Props) {
       >
         <Image
           src={
-            page === "services" ? service : page === "projects" ? project : ""
+            page === "services"
+              ? service
+              : page === "projects"
+              ? project
+              : page === "testimonials"
+              ? test
+              : ""
           }
           alt="show case"
           width={300}

@@ -9,3 +9,22 @@ html {
 .borderBlack {
     @apply border border-black/10;
 }
+
+/* globals.css or your component's CSS module */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar handle color */
+    border-radius: 8px; /* Rounded corners for the scrollbar handle */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the scrollbar handle */
+  }
+  

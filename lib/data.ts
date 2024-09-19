@@ -3,14 +3,15 @@ import carRentImg from "@/public/projects/carRent.png";
 import ecomImg from "@/public/projects/ecom.png";
 import gymImg from "@/public/projects/gym.png";
 import quizImg from "@/public/projects/quizzApp.png"
-import aiTeacherImg from "@/public/projects/aiTeacher.jpeg"
-import appDevImg from "@/public/services/1.png"
-import saasDevImg from "@/public/services/2.png"
-import featureEnhanceImg from "@/public/services/4.png"
-import maintenanceImg from "@/public/services/5.png"
-import authIntegrationImg from "@/public/services/6.png"
-import paymentIntegrationImg from "@/public/services/7.png"
-import aiIntegrationImg from "@/public/services/8.png"
+import aiTeacherImg from "@/public/projects/aiTeacher.png"
+import appDevImg from "@/public/services/appDev.png"
+import saasDevImg from "@/public/services/SaasDev.png"
+import featureEnhanceImg from "@/public/services/featureEnhance.png"
+import maintenanceImg from "@/public/services/maintenance.png"
+import authIntegrationImg from "@/public/services/authIntegration.png"
+import paymentIntegrationImg from "@/public/services/paymentIntegration.png"
+import aiIntegrationImg from "@/public/services/aiIntegration.png"
+import affiliatePortalImg from "@/public/projects/affiliatePortal.png"
 
 export const links = [
   {
@@ -38,7 +39,7 @@ export const links = [
     hash: "./services",
   },
   {
-    name: "projectsPage",
+    name: "All Projects",
     hash: "./projects",
   },
 
@@ -50,8 +51,12 @@ export const Addlinks = [
     hash: "./services",
   },
   {
-    name: "projectsPage",
+    name: "All Projects",
     hash: "./projects",
+  },
+  {
+    name: "Testimonials",
+    hash: "./testimonials",
   },
 
 ] as const;
@@ -78,17 +83,29 @@ export const linksType = [
     hash: "./#contact",
   },
   {
-    name: "projectsPage",
+    name: "All Projects",
     hash: "./projects",
   },
   {
     name: "Services",
     hash: "./services",
   },
+  {
+    name: "Testimonials",
+    hash: "./testimonials",
+  },
 
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Affiliate Portal",
+    description:
+      "An advanced affiliate management system designed for seamless integration with Ai Teacher and Ai Quiz. This platform allows affiliates to track their referrals, manage earnings, and receive payments.",
+    tags: ["Next.js", "TypeScript", "API", "Prisma", "MongoDB"],
+    imageUrl: affiliatePortalImg,
+    link: "https://partner.learnrithm.com/",
+  },  
   {
     title: "AI Teacher",
     description:
@@ -197,6 +214,74 @@ export const services = [
     link: "/#contact",
   }
 ] as const;
+
+export const testimonials = [
+  {
+    name: 'Peter Okafour',
+    position: 'CEO at Learnrithm AI',
+    imageLink: 'https://randomuser.me/api/portraits/men/75.jpg',
+    opinion: 'Great to collaborate with you. You have very good code quality, ensuring the business model follows and maintaining high visibility with team working and time management. Highly recommend them.',
+    postLink: 'https://www.linkedin.com/posts/peterokafor_education-has-a-problem-its-a-problem-we-activity-7238233155172786176-dxdx?utm_source=share&utm_medium=member_desktop'
+  },
+  {
+    name: 'Sarah Johnson',
+    position: 'CTO at Tech Innovations',
+    imageLink: 'https://randomuser.me/api/portraits/women/66.jpg',
+    opinion: 'The project was handled with exceptional professionalism and efficiency. The attention to detail and commitment to delivering high-quality work was impressive. Would definitely work with them again.',
+    postLink: 'https://www.linkedin.com/posts/sarahjohnson_technology-innovation-leadership-activity-7096588396243783680-UVWv'
+  },
+  {
+    name: 'Michael Smith',
+    position: 'Founder at Digital Nexus',
+    imageLink: 'https://randomuser.me/api/portraits/men/83.jpg',
+    opinion: 'Impressive results and excellent customer service. Their ability to adapt to our changing needs and deliver on time was crucial for the success of our project.',
+    postLink: 'https://www.linkedin.com/posts/michaelsmith_digital-transformation-strategy-activity-7102954945539152896-p7Zn'
+  },
+  {
+    name: 'Emily Davis',
+    position: 'Marketing Director at Brand Boosters',
+    imageLink: 'https://randomuser.me/api/portraits/women/54.jpg',
+    opinion: 'Outstanding experience! Their expertise in integrating marketing automation tools helped streamline our processes and improve our ROI significantly.',
+    postLink: 'https://www.linkedin.com/posts/emilydavis_marketing-automation-roi-activity-7088581287365934080-Mmql'
+  },
+  {
+    name: 'James Wilson',
+    position: 'Product Manager at Innovate Tech',
+    imageLink: 'https://randomuser.me/api/portraits/men/91.jpg',
+    opinion: 'Exceptional work and a great team to work with. They delivered a top-notch product that exceeded our expectations. Highly recommend for any tech needs.',
+    postLink: 'https://www.linkedin.com/posts/jameswilson_product-management-activity-7121154043729842176-5kza'
+  },
+  {
+    name: 'Olivia Brown',
+    position: 'Head of Design at Creative Minds',
+    imageLink: 'https://randomuser.me/api/portraits/women/42.jpg',
+    opinion: 'Their design skills are top-notch. The user interfaces they created were not only aesthetically pleasing but also highly functional and user-friendly.',
+    postLink: 'https://www.linkedin.com/posts/oliviabrown_ui-design-activity-7103159468324975616-Pxna'
+  },
+  {
+    name: 'David Lee',
+    position: 'Lead Developer at Code Craft',
+    imageLink: 'https://randomuser.me/api/portraits/men/34.jpg',
+    opinion: 'They demonstrated excellent technical skills and a deep understanding of complex systems. The final product was robust and well-executed.',
+    postLink: 'https://www.linkedin.com/posts/davidlee_software-development-activity-7112080675792382976-8Op2'
+  },
+  {
+    name: 'Sophia Martinez',
+    position: 'Business Analyst at Data Insights',
+    imageLink: 'https://randomuser.me/api/portraits/women/76.jpg',
+    opinion: 'Their analytical approach to solving business problems was exactly what we needed. Their insights and recommendations greatly improved our strategic decisions.',
+    postLink: 'https://www.linkedin.com/posts/sophiamartinez_business-analysis-activity-7118490225868231680-IbhG'
+  },
+  {
+    name: 'Lucas Green',
+    position: 'Operations Manager at Efficient Ops',
+    imageLink: 'https://randomuser.me/api/portraits/men/60.jpg',
+    opinion: 'Their operational solutions were spot on. They helped streamline our processes and significantly improved our overall efficiency.',
+    postLink: 'https://www.linkedin.com/posts/lucasgreen_operations-management-activity-7124785511562687488-KjV2'
+  }
+]
+
+
 
 
 export const skillsData = [

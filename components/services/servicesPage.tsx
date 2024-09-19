@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
-import HeaderInfo from "./headerInfo";
 import Services from "./services";
 import { useSectionInView } from "@/lib/hooks";
+import HeaderInfo from "../comune/headerInfo";
 
 export default function ServicesPage() {
   const { ref } = useSectionInView("Services", 0.25);

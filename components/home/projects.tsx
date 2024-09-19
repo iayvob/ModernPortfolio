@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
-import Project from "./cardInfo";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
+import SectionHeading from "../comune/section-heading";
+import CardInfo from "../comune/cardInfo";
 
 
 export default function Projects() {
@@ -20,7 +20,7 @@ export default function Projects() {
                 {
                     projectsData.slice(0, 4).map((project, index) => (
                     <React.Fragment key={index}>
-                        <Project {...project}/>
+                        <CardInfo {...project}/>
                     </React.Fragment>
                     ))}
             </div>

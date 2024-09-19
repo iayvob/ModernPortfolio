@@ -1,14 +1,14 @@
 'use client'
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
-import HeaderInfo from "./headerInfo";
 import ProjectsComponent from "./projectComponent";
+import HeaderInfo from "../comune/headerInfo";
 
 export default function ProjectsPage() {
-  const { ref } = useSectionInView("projectsPage", 0.25);
+  const { ref } = useSectionInView("All Projects", 0.25);
 
   return (
-    <div className="flex flex-col scroll-mt-[100rem] " ref={ref} id="projectsPage">
+    <div className="flex flex-col scroll-mt-[100rem] " ref={ref} id="All Projects">
       <HeaderInfo
         title={"Showcasing Innovative Web Solutions"}
         description={

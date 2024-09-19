@@ -1,6 +1,6 @@
 import { projectsData } from "@/lib/data";
 import React from "react";
-import CardInfo from "./cardInfo";
+import CardInfo from "../comune/cardInfo";
 
 export default function ProjectsComponent() {
   return (

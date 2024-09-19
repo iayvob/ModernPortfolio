@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import ServicesPage from "@/components/servicesPage";
+import ServicesPage from "@/components/services/servicesPage";
 
 export const metadata: Metadata = {
   title: "Services | Ayoub Chalabi",

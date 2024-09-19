@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { services } from "@/lib/data";
-import CardInfo from "@/components/cardInfo";
+import CardInfo from "../comune/cardInfo";
 
 export default function Services() {
   return (
