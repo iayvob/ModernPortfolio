@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { FiExternalLink } from "react-icons/fi";
+import profile from "@/public/Illustration/profilePic.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -32,7 +33,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://pbs.twimg.com/profile_images/1804488911093202944/UerGXacu_400x400.jpg"
+              src={profile}
               alt="Chalabi Ayoub"
               width="192"
               height="192"
@@ -64,9 +65,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Ayoub.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experiences. I enjoy
-        building <span className="italic">sites</span> with{" "}
-        <span className="underline">different (TechStacks)</span>.
+        <span className="font-bold">3 years</span> of experiences
       </motion.p>
 
       <motion.div

@@ -5,6 +5,8 @@ import test from "@/public/Illustration/testimonials.png";
 import project from "@/public/Illustration/project.png";
 import service from "@/public/Illustration/service.png";
 import { motion } from "framer-motion";
+import profile from "@/public/Illustration/profilePic.jpg";
+
 
 type Props = {
   title: string;
@@ -29,7 +31,7 @@ export default function HeaderInfo({ title, description, page }: Props) {
             <div className=" relative ">
               <div>
                 <Image
-                  src="https://pbs.twimg.com/profile_images/1804488911093202944/UerGXacu_400x400.jpg"
+                  src={profile}
                   alt="Chalabi Ayoub"
                   width={170}
                   height={170}

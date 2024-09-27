@@ -8,7 +8,7 @@ export default function ServicesPage() {
   const { ref } = useSectionInView("Services", 0.25);
 
   return (
-    <main ref={ref} id="Services">
+    <main ref={ref} id="Services" className="scroll-mt-[100rem]">
       <HeaderInfo
         title={"Our Tailor-Made Solutions for Your Business"}
         description={
