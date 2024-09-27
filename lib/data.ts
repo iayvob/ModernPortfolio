@@ -219,7 +219,7 @@ export const testimonials = [
   {
     name: 'Peter Okafour',
     position: 'CEO at Learnrithm AI',
-    imageLink: 'https://randomuser.me/api/portraits/men/75.jpg',
+    imageLink: 'https://media.licdn.com/dms/image/v2/D4D03AQFkE5U_mjsA7g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693259935378?e=1732752000&v=beta&t=PF4ZguCRlEgokhAWbko7G1FXm6lDwQ3HVsToYkEWoUA',
     opinion: 'Great to collaborate with you. You have very good code quality, ensuring the business model follows and maintaining high visibility with team working and time management. Highly recommend them.',
     postLink: 'https://www.linkedin.com/posts/peterokafor_education-has-a-problem-its-a-problem-we-activity-7238233155172786176-dxdx?utm_source=share&utm_medium=member_desktop'
   },
