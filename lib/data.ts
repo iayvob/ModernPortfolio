@@ -104,7 +104,7 @@ export const projectsData = [
       "An advanced affiliate management system designed for seamless integration with Ai Teacher and Ai Quiz. This platform allows affiliates to track their referrals, manage earnings, and receive payments.",
     tags: ["Next.js", "TypeScript", "API", "Prisma", "MongoDB"],
     imageUrl: affiliatePortalImg,
-    link: "https://partner.learnrithm.com/",
+    link: "https://partner.learnrithm.com",
   },  
   {
     title: "AI Teacher",
@@ -112,15 +112,15 @@ export const projectsData = [
       "A dynamic SaaS platform for personalized AI-powered teaching solutions. Fully responsive with real-time data processing and interactive user experiences.",
     tags: ["Mongoose", "ReactJS", "Tailwind CSS", "JavaScript", "ExpressJS"],
     imageUrl: aiTeacherImg,
-    link: "https://ai-teacher-psi.vercel.app/",
+    link: "https://aiteacher.learnrithm.com",
   },
   {
-    title: "Learnrithm",
+    title: "AI Quiz",
     description:
       "A comprehensive SaaS platform for interactive learning, featuring quizzes and study tools, built using modern technologies for scalability and responsiveness.",
     tags: ["Prisma", "Next.js", "Tailwind CSS", "TypeScript", "REST API"],
     imageUrl: quizImg,
-    link: "https://quizzorithm-testapp.vercel.app/",
+    link: "https://quiz.learnrithm.com",
   },
   {
     title: "E-commerce MMRD",
