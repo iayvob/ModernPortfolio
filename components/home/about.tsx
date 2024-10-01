@@ -67,7 +67,7 @@ export default function About() {
       </p>
       <div className="flex items-center justify-center mt-12">
         <div className="relative">
-          <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur"></div>
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur"></div>
           <button className="relative rounded-lg bg-gray-950 px-4 py-2 text-white">
             <a
               href="https://iayvoblog.vercel.app"
