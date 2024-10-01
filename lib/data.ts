@@ -115,7 +115,7 @@ export const projectsData = [
     link: "https://ai-teacher-psi.vercel.app/",
   },
   {
-    title: "Learnrithm",
+    title: "AI QUIZ",
     description:
       "A comprehensive SaaS platform for interactive learning, featuring quizzes and study tools, built using modern technologies for scalability and responsiveness.",
     tags: ["Prisma", "Next.js", "Tailwind CSS", "TypeScript", "REST API"],
