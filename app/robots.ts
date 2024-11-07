@@ -1,15 +1,13 @@
-import { NextResponse } from "next/server";
+import { MetadataRoute } from "next";
 
-export default async function GET() {
-  const robotsTxt = `
-    User-agent: *
-    Allow: /
-    Sitemap: ${process.env.NEXT_PUBLIC_URL}/sitemap.xml
-  `;
-  
-  return new NextResponse(robotsTxt, {
-    headers: {
-      "Content-Type": "text/plain",
-    },
-  });
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+    ],
+    sitemap: `${process.env.NEXT_PUBLIC_URL}/sitemap.xml`,
+  };
 }
