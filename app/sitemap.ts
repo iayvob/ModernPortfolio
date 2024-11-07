@@ -2,7 +2,7 @@
 
 import { NextApiRequest, NextApiResponse } from "next";
 
-const BASE_URL = "https://yourdomain.com";
+const BASE_URL = process.env.NEXT_PUBLIC_URL;
 
 const sitemap = [
   { url: `${BASE_URL}/`, priority: 1.0 },

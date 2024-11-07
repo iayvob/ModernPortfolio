@@ -1,14 +1,15 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.setHeader("Content-Type", "text/plain");
-  res.status(200).send(generateRobotsTxt());
-}
-
-function generateRobotsTxt() {
-  return `
+export async function GET() {
+  const robotsTxt = `
     User-agent: *
     Allow: /
-    Sitemap: https://iayvob.vercel.app/sitemap.xml
+    Sitemap: ${process.env.NEXT_PUBLIC_URL}/sitemap.xml
   `;
+  
+  return new NextResponse(robotsTxt, {
+    headers: {
+      "Content-Type": "text/plain",
+    },
+  });
 }
