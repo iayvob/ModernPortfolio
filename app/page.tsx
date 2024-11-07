@@ -12,7 +12,27 @@ export const metadata: Metadata = {
     template: "%s | Ayoub Chalabi",
   },
   description: "Ayoub Full-stack web Developer Portfolio",
-  keywords: ["Ayoub Chalabi", "Full-stack Developer", "React Developer", "Next.js Developer", "Web Developer", "Portfolio"]
+  keywords: [
+    "Ayoub Chalabi",
+    "Full-stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Web Developer",
+    "Portfolio",
+  ],
+  twitter: {
+    images: ["/src/app/openGraph-image.png"],
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/src/app/openGraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ayoub Chalabi's Portfolio",
+      },
+    ],
+  },
 };
 
 export default function Home() {
@@ -26,4 +46,4 @@ export default function Home() {
       <Contact />
     </main>
   );
-}; 
+}
