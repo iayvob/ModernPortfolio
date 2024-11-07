@@ -3,12 +3,13 @@ import { Metadata } from "next";
 import ServicesPage from "@/components/services/servicesPage";
 
 export const metadata: Metadata = {
-  title: "Services | Ayoub Chalabi",
-  description: "Ayoub full-stack React(Next.js) Developer",
+  title: {
+    default: "Services | Ayoub Chalabi",
+    template: "%s | Ayoub Chalabi",
+  },
+  description: "Ayoub full-stack Web Developer Services",
 };
 
 export default function Page() {
-  return (
-      <ServicesPage />
-  );
+  return <ServicesPage />;
 }

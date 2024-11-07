@@ -3,10 +3,13 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Testimonials | Ayoub Chalabi",
-  description: "Ayoub full-stack React(Next.js) Developer",
+  title: {
+    default: "Testimonials | Ayoub Chalabi",
+    template: "%s | Ayoub Chalabi",
+  },
+  description: "Ayoub full-stack Web Developer testimonials",
 };
 
-export default function page() {
+export default function Page() {
   return <TestimonialsPage />;
 }

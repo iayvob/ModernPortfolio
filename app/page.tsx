@@ -7,8 +7,12 @@ import Contact from "@/components/home/contact";
 import Projects from "@/components/home/projects";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Ayoub Chalabi",
-  description: "Ayoub Full-stack React(Next.js) Developer",
+  title: {
+    default: "Portfolio | Ayoub Chalabi",
+    template: "%s | Ayoub Chalabi",
+  },
+  description: "Ayoub Full-stack web Developer Portfolio",
+  keywords: ["Ayoub Chalabi", "Full-stack Developer", "React Developer", "Next.js Developer", "Web Developer", "Portfolio"]
 };
 
 export default function Home() {
