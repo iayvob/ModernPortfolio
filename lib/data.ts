@@ -12,6 +12,7 @@ import authIntegrationImg from "@/public/services/authIntegration.png"
 import paymentIntegrationImg from "@/public/services/paymentIntegration.png"
 import aiIntegrationImg from "@/public/services/aiIntegration.png"
 import affiliatePortalImg from "@/public/projects/affiliatePortal.png"
+import skillAreaImg from "@/public/projects/SkillArea.png"
 
 export const links = [
   {
@@ -99,6 +100,14 @@ export const linksType = [
 
 export const projectsData = [
   {
+    title: "SkillArea Association",
+    description:
+      "A non-profit learning platform created for the SkillArea Association to provide free education in modern technologies to Arabic-speaking individuals. The platform emphasizes accessibility and inclusivity.",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    imageUrl: skillAreaImg,
+    link: "https://skillsarealearninghomepage.vercel.app/",
+  },
+  {
     title: "Affiliate Portal",
     description:
       "An advanced affiliate management system designed for seamless integration with Ai Teacher and Ai Quiz. This platform allows affiliates to track their referrals, manage earnings, and receive payments.",
@@ -162,7 +171,7 @@ export const services = [
     description:
       "End-to-end development of web applications tailored to your unique business needs, ensuring scalability, security, and seamless user experiences.",
     tags: ["React.js", "Next.js", "JavaScript", "TypeScript", "Node.js", "Tailwind CSS", "API Integration", "MongoDB", "PostgreSQL"],
-    imageUrl: appDevImg,  // Add appropriate image reference
+    imageUrl: appDevImg, 
     link: "/#contact",
   },
   {
@@ -170,7 +179,7 @@ export const services = [
     description:
       "Building powerful and feature-rich SaaS platforms from the ground up, using the latest tech stacks to deliver solutions that grow with your business.",
     tags: ["React.js", "Next.js", "Node.js", "Prisma", "MongoDB", "PostgreSQL", "REST API", "Tailwind CSS"],
-    imageUrl: saasDevImg,  // Add appropriate image reference
+    imageUrl: saasDevImg,
     link: "/#contact",
   },
   {
@@ -178,7 +187,7 @@ export const services = [
     description:
       "Enhancing existing applications with new functionalities, while optimizing current features for better performance, usability, and scalability.",
     tags: ["React.js", "Next.js", "JavaScript", "TypeScript", "Node.js", "API Development", "UI/UX Optimization"],
-    imageUrl: featureEnhanceImg,  // Add appropriate image reference
+    imageUrl: featureEnhanceImg,
     link: "/#contact",
   },
   {
@@ -186,7 +195,7 @@ export const services = [
     description:
       "Providing continuous support to ensure your applications run smoothly, with regular updates, performance checks, and feature upgrades as needed.",
     tags: ["Bug Fixes", "Performance Monitoring", "Security Updates", "Feature Upgrades", "UI/UX Improvements"],
-    imageUrl: maintenanceImg,  // Add appropriate image reference
+    imageUrl: maintenanceImg,
     link: "/#contact",
   },
   {
@@ -194,7 +203,7 @@ export const services = [
     description:
       "Implementing secure and reliable user authentication systems such as Clerk or NextAuth to manage user accounts, sessions, and authorization.",
     tags: ["NextAuth", "Clerk", "OAuth", "User Authentication", "Session Management", "Security"],
-    imageUrl: authIntegrationImg,  // Add appropriate image reference
+    imageUrl: authIntegrationImg,
     link: "/#contact",
   },
   {
@@ -202,7 +211,7 @@ export const services = [
     description:
       "Seamlessly integrating payment gateways like Flutterwave, Stripe, and Paystack to ensure secure, smooth, and reliable transaction processing.",
     tags: ["Flutterwave", "Stripe", "Paystack", "Payment Gateway", "Transaction Processing", "API Integration"],
-    imageUrl: paymentIntegrationImg,  // Add appropriate image reference
+    imageUrl: paymentIntegrationImg,
     link: "/#contact",
   },
   {
@@ -210,7 +219,7 @@ export const services = [
     description:
       "Incorporating advanced AI models such as OpenAI or Gemini to enable features like text generation, JSON output processing, and image/PDF analysis.",
     tags: ["OpenAI", "Gemini", "AI Integration", "JSON Output", "Image Processing", "PDF Analysis"],
-    imageUrl: aiIntegrationImg,  // Add appropriate image reference
+    imageUrl: aiIntegrationImg, 
     link: "/#contact",
   }
 ] as const;
