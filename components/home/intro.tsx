@@ -10,7 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { FiExternalLink } from "react-icons/fi";
-import profile from "@/public/Illustration/profilePic.jpg";
+import profile from "../../public/Illustration/profilePic.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -88,7 +88,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href='/files/Curriculum-Vitae-Ayoub-Chalabi.pdf'
+          href='/files/Curriculum-Vitae-Ayoub-Chalabi-English-Version.pdf'
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
         >
