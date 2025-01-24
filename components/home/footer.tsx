@@ -8,7 +8,7 @@ export default function Footer() {
             <small 
                 className="mb-2 block text-xs"
             >
-                &copy; 2024 iayvob, All right reserved.
+                &copy; 2025 iayvob, All right reserved.
             </small>
             <p 
                 className="text-xs"
